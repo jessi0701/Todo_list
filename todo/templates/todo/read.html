@@ -1,0 +1,11 @@
+{% extends "todo/base.html" %}
+
+{% block bodyblock%}
+    
+        <h3>{{todo.title}}</h3>
+        <p>{{todo.content}}</p>
+        <a href="/todos/{{todo.id}}/delete/">삭제</a>
+        <a href="/todos/{{todo.id}}/edit/">수정</a>
+        <hr>
+    
+{% endblock %}
